@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="myhead">
+            <h3>Age Calculator</h3>
+        </div>
+       <div class="myform">
+        <div class="myblock">
+            <p class="mytitle">Days</p>
+            <input type="text" name="days" id="days" placeholder="dd" required maxlength="2">
+        </div>
+        <div class="myblock">
+            <p class="mytitle">Months</p>
+            <input type="text" name="months" id="months" placeholder="mm" required maxlength="2">
+        </div>
+        <div class="myblock">
+            <p class="mytitle">Years</p>
+            <input type="text" name="years" id="years" placeholder="yy" required maxlength="4">
+        </div>
+    </div>
+    <div id="age"></div>
+       <div class="mysubmit-button">
+        <input type="button" name="submit" id="submit" value="Calculate" onclick="age()">
+       </div>
+    </div>
+
+
+
+
+
     <script src="./script.js"></script>
 </body>
 </html>
